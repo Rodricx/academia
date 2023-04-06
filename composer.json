@@ -1,0 +1,14 @@
+{
+    "name": "rodri/academia",
+    "autoload": {
+        "psr-4": {
+            "Rodri\\Academia\\": "src/"
+        },
+        "files" : [
+            "app/functions/Login.php"
+        ]
+    },
+    "require": {}
+
+    
+}
