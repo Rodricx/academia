@@ -15,6 +15,7 @@ validate($_POST, "Necessário preencher o campo", "field-warning", "alert alert-
  * X - Separar  conexão em arquivo a parte;
  */
 
+
 $query = $access->prepare("SELECT loginUser, passUser FROM usuario WHERE loginUser = :USUARIO AND passUser = :SENHA");
 $query->bindValue(":USUARIO", $_POST['usuario']);
 $query->bindValue(":SENHA", $_POST['senha']);
