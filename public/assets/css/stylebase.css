@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.base {
+    display: grid;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: "message" "content-layout" "footer";
+    height: 100vh;
+    position: relative;
+}
+
+.content-layout {
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-template-areas: "h1 card";
+    width: 80%;
+    margin: 0 auto;
+    grid-area: content-layout;
+}
+
+.hh1{
+    color: rgb(59, 59, 59);
+    font-size: 50pt;
+    grid-area: "h1";
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-base {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login{
+    height:50%;
+    width: 130%;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-area: footer;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px){
+    .base{
+        display: block;
+        grid-template-rows: none;
+        grid-template-areas: none;
+        max-height: 100%; 
+        margin-left: 0;
+        margin-right: 0; 
+        width: 100vw;
+    }
+
+    .card-base {
+        width: 100vw;
+        height: auto;
+    }
+
+    .hh1{
+        display: none;
+    }
+
+    .form-login {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content-layout{
+        height: 100%;
+        width: 100%;
+    }
+}
