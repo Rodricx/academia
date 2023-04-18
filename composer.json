@@ -3,7 +3,11 @@
     "autoload": {
         "psr-4": {
             "Rodrigo\\Academia\\": "src/"
-        }
+        },
+        "files" : [
+            "app/config/config.php",
+            "app/database/conn.php"
+        ]
     },
     "authors": [
         {

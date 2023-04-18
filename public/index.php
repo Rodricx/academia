@@ -33,10 +33,10 @@
                 <form class="form-login">
                     <legend>Login</legend>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="user" placeholder="Usuário">
+                        <input type="text" class="form-control field" id="user" placeholder="Usuário">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="pass" placeholder="Senha">
+                        <input type="password" class="form-control field" id="pass" placeholder="Senha">
                     </div>
                     <div class="mb-3">
                         <button id="submit" class="btn btn-primary btn-full">Acessar</button>
