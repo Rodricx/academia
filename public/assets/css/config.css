@@ -1,0 +1,15 @@
+.hidden {
+    display: none !important;
+}
+
+.message {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.field-warning, .field-warning::placeholder {
+    background-color: #fff3cd !important;
+    color: #664d03 !important;
+    border-color: #ffecb5 !important;
+}
